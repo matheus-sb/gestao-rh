@@ -43,12 +43,15 @@ variable "azure_subscription_id" {
 }
 
 variable "client_id" {
+  description = "Azure client id"
 }
 
 variable "client_secret" {
+  description = "Azure client secret"
 }
 
 variable "tenant_id" {
+  description = "Azure tenant id"
 }
 
 ############################
