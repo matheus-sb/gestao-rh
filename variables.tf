@@ -42,6 +42,14 @@ variable "azure_subscription_id" {
   description = "Azure subscription identity"
 }
 
+variable "client_id" {
+}
+
+variable "client_secret" {
+}
+
+variable "tenant_id" {
+}
 
 ############################
 # Azure App Service #
@@ -53,4 +61,5 @@ variable "azure_location" {
 
 variable "app-service-prefix" {
   description = "Used to create group, plan, and app service with this prefix"
+  default = "gestaorh2"
 }

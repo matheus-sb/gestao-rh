@@ -3,7 +3,7 @@ provider "oci" {
   tenancy_ocid     = var.tenancy_ocid
   user_ocid        = var.user_ocid
   fingerprint      = var.fingerprint
-  private_key_path = var.private_key_path
+  private_key      = var.private_key_path
   region           = var.region
 }
 
@@ -11,4 +11,7 @@ provider "oci" {
 provider "azurerm" {
   features {}
   subscription_id = var.azure_subscription_id
+  client_id       = var.client_id
+  client_secret   = var.client_secret
+  tenant_id       = var.tenant_id
 }
