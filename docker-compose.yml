@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  app:
+    image: "20111986/oci-projeto-final-cadastro-funcionarios-app"
+    environment:
+        - DB_CONNECT_STRING=
+        - DB_USER=
+        - DB_PASSWORD=
