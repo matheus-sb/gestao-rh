@@ -3,6 +3,6 @@ services:
   app:
     image: "20111986/oci-projeto-final-cadastro-funcionarios-app"
     environment:
-        - DB_CONNECT_STRING=${dc_db_connect_string}
-        - DB_USER=${dc_db_user}
-        - DB_PASSWORD=${dc_db_password}
+        - DB_CONNECT_STRING=${db_connect_string}
+        - DB_USER=${db_user}
+        - DB_PASSWORD=${db_password}

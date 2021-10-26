@@ -19,9 +19,9 @@ resource "azurerm_app_service_plan" "main" {
 data "template_file" "docker_compose" {
   template = "${file("docker-compose.yml")}"
   vars = {
-    dc_db_connect_string = "${db_connect_string}"
-    dc_db_user           = "${db_user}"
-    dc_db_password       = "${db_password}"
+    db_connect_string = "${var.db_connect_string}"
+    db_user           = "${var.db_user}"
+    db_password       = "${var.db_password}"
   }
 }
 
