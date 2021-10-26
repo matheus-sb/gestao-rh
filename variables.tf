@@ -66,3 +66,15 @@ variable "app-service-prefix" {
   description = "Used to create group, plan, and app service with this prefix"
   default = "gestaorh2"
 }
+
+variable "db_connect_string" {
+  description = "Database connection string"
+}
+
+variable "db_user" {
+  description = "Database user"
+}
+
+variable "db_password" {
+  description = "Database password"
+}
