@@ -34,7 +34,6 @@ resource "azurerm_app_service" "main" {
   site_config {
     app_command_line = ""
     linux_fx_version = "COMPOSE|${base64encode("${data.template_file.docker_compose.rendered}")}"
-    scm_type         = "GitHub"
     use_32_bit_worker_process = true
   }
 
